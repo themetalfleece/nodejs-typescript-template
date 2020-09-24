@@ -3,8 +3,8 @@
 # What to do after using this template
 
 1. Edit `package.json` to set the project name, version, description, and author.
-2. Edit the `LICENSE` file to use your name in the Copyright section
-3. Delete this section from the `README.md` file
+2. Edit the `LICENSE` file to use your name in the Copyright section.
+3. Delete this section from the `README.md` file.
 
 ## Install
 
