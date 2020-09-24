@@ -1,0 +1,30 @@
+{
+    "name": "nodejs-typescript-template",
+    "version": "0.0.1",
+    "description": "A template for a nodejs application, using typescript",
+    "main": "dist/src/index.js",
+    "author": "",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon --watch src/**/*.ts --exec ts-node ./src/app.ts",
+        "build": "tsc",
+        "start": "node ./dist/src/app.js",
+        "lint": "eslint --fix --quiet src/**/*.ts",
+        "format": "prettier --loglevel silent --write src/**/*.ts"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^8.2.0",
+        "@types/node": "^14.0.22",
+        "@typescript-eslint/eslint-plugin": "^3.6.0",
+        "@typescript-eslint/parser": "^3.6.0",
+        "eslint": "^7.4.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.6",
+        "typescript-eslint-parser": "^22.0.0"
+    }
+}
