@@ -1,6 +1,6 @@
 {
     "name": "nodejs-typescript-template",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A template for a nodejs application, using typescript",
     "main": "dist/src/index.js",
     "author": "",
