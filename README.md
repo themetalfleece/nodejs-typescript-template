@@ -21,6 +21,22 @@
 -   You can run `yarn dev` to combine the 2 steps above, while listening to changes and restarting automatically.
     -   You need to run `yarn global add ts-node nodemon` once for this to run.
 
+## Run with Docker
+
+1. Build:
+
+    ```
+    docker build -t my-app .
+    ```
+
+    Replacing `my-app` with the image name.
+
+2. Run
+    ```
+    docker run -d -p 3000:3000 my-app
+    ```
+    Replacing `my-app` with the image name, and `3000:3000` with the `host:container` ports to publish.
+
 ## Linting & Formatting
 
 -   Run `yarn lint` to lint the code.
