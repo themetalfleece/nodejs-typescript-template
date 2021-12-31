@@ -19,7 +19,6 @@
 3. Run `yarn start` to start the application.
 
 -   You can run `yarn dev` to combine the 2 steps above, while listening to changes and restarting automatically.
-    -   You need to run `yarn global add ts-node nodemon` once for this to run.
 
 ## Run with Docker
 
