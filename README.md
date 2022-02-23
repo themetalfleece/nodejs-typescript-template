@@ -44,10 +44,10 @@
 
 ## Testing
 
-Check the tests example to get started 
+Check the placeholder test examples to get started : 
 
-`/src/sum.ts` that provide a function `sum` 
-`/test/sum.spec.ts` who test the `sum` function 
+- `/src/sum.ts` that provide a function `sum` 
+- `/test/sum.spec.ts` who test the `sum` function 
 
 This files are just an example, feel free to remove it
 
