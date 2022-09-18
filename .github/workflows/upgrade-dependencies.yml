@@ -1,5 +1,5 @@
 name: Upgrade all dependencies
-on: 
+on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
@@ -24,7 +24,8 @@ jobs:
         run: |
           git config --global user.name 'Auto upgrade'
           git config --global user.email 'themetalfleece@users.noreply.github.com'
-          git add .
+          git add package.json
+          git restore .
           git commit -am "Upgrade dependencies"
           npm version minor
           git push
