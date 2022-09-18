@@ -1,0 +1,31 @@
+name: Upgrade all dependencies
+on: 
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  upgrade:
+    if: github.repository == 'themetalfleece/nodejs-typescript-template'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Install yarn-upgrade-all
+        run: yarn global add yarn-upgrade-all
+      - name: Upgrade all dependencies
+        run: yarn-upgrade-all
+      - name: Verify changes
+        id: verify_changes
+        run: |
+          echo "::set-output name=changes::$(git status --porcelain)"
+      - name: Commit changes
+        if: steps.verify_changes.outputs.changes != ''
+        run: |
+          git config --global user.name 'Auto upgrade'
+          git config --global user.email 'themetalfleece@users.noreply.github.com'
+          git add .
+          git commit -am "Upgrade dependencies"
+          npm version minor
+          git push
+          git push --tags
