@@ -6,9 +6,10 @@
 
 1. Edit `package.json` to set the project name, version, description, and author.
 2. Edit the `LICENSE` file to use your name in the Copyright section.
-3. Remove the `.github/workflows/upgrade-dependencies.yml` files, since it contains the workflow to upgrade all dependencies on a daily basis.
+3. Edit the `.prettierrc.json` file with your preferred values.
+4. Remove the `.github/workflows/upgrade-dependencies.yml` files, since it contains the workflow to upgrade all dependencies on a daily basis.
    * In case you would like to keep it, remove line `7` from it.
-4. Delete this section from the `README.md` file.
+5. Delete this section from the `README.md` file.
 
 ## Install
 
