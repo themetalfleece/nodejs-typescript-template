@@ -10,6 +10,7 @@
 4. Remove the `.github/workflows/upgrade-dependencies.yml` files, since it contains the workflow to upgrade all dependencies on a daily basis.
    * In case you would like to keep it, remove line `7` from it.
 5. Delete this section from the `README.md` file.
+6. Start coding by editing the `src/app.ts` file!
 
 ## Install
 
@@ -46,17 +47,15 @@
 -   Run `yarn lint` or `npm lint` to lint the code.
 -   Run `yarn format` or `npm format` to format the code.
 
-
 ## Testing
 
 Check the placeholder test examples to get started : 
 
-- `/src/sum.ts` that provide a function `sum` 
-- `/test/sum.spec.ts` who test the `sum` function 
+- `/src/app.ts` that provide a function `sum` 
+- `/test/app.spec.ts` who test the `sum` function 
 
 This files are just an example, feel free to remove it
 
 -   Run `yarn test` or `npm test` to execute all tests.
 -   Run `yarn test:watch` or `npm test:watch` to run tests in watch (loop) mode.
 -   Run `yarn test:coverage` or `npm test:coverage` to see the tests coverage report.
-

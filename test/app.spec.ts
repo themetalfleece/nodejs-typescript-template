@@ -1,4 +1,4 @@
-import sum from '../src/sum';
+import { sum } from '../src/app';
 
 describe('sum', () => {
   it('sum return a number', async () => {
