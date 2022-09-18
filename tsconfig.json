@@ -1,16 +1,16 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "pretty": true,
-        "resolveJsonModule": true,
-        "sourceMap": true,
-        "target": "es2021",
-        "outDir": "./dist",
-        "baseUrl": "./src",
-        "experimentalDecorators": true,
-        "strict": true
-    },
-    "include": ["src/**/*.ts", "test/**/*.spec.ts"],
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "es2021",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "strict": true
+  },
+  "include": ["src/**/*.ts", "test/**/*.spec.ts"],
+  "exclude": ["node_modules"]
 }
