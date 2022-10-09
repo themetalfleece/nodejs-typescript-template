@@ -8,7 +8,7 @@
 2. Edit the `LICENSE` file to use your name in the Copyright section.
 3. Edit the `.prettierrc.json` file with your preferred values.
 4. Remove the `.github/workflows/upgrade-dependencies.yml` files, since it contains the workflow to upgrade all dependencies on a daily basis.
-   * In case you would like to keep it, remove line `7` from it.
+   * In case you would like to keep it, remove lines 7, 30, 32 from it. Also, change the git user name in line 28.
 5. Delete this section from the `README.md` file.
 6. Start coding by editing the `src/app.ts` file!
 
