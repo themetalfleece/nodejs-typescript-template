@@ -42,6 +42,12 @@
     ```
     Replacing `my-app` with the image name, and `3000:3000` with the `host:container` ports to publish.
 
+## Developing
+
+### Visual Studio Code
+
+-   Installing the Eslint (`dbaeumer.vscode-eslint`) and Prettier - Code formatter (`esbenp.prettier-vscode`) extensions is recommended.
+
 ## Linting & Formatting
 
 -   Run `yarn lint` or `npm lint` to lint the code.
