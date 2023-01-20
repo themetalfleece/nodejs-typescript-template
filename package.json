@@ -19,7 +19,6 @@
     "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "@types/dotenv": "^8.2.0",
     "@types/jest": "^29.2.6",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
