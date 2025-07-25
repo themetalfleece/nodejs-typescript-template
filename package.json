@@ -16,7 +16,7 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "dotenv": "^17.2.0"
+    "dotenv": "^17.2.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
