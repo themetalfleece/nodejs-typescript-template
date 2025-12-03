@@ -10,7 +10,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          ref: master
+          ref: main
       - name: Install yarn-upgrade-all
         run: yarn global add yarn-upgrade-all
       - name: Upgrade all dependencies

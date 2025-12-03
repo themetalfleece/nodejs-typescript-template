@@ -1,19 +1,34 @@
-FROM node:16-alpine
+# Stage 1: Build
+FROM node:24-alpine AS build
 
 WORKDIR /usr/app
 
-# first copy just the package and the lock file, for caching purposes
-COPY package.json ./
-COPY yarn.lock ./
+# Copy package files for dependency installation
+COPY package.json package-lock.json* ./
 
-# install dependencies
-RUN yarn
+# Install dependencies
+RUN npm ci
 
-# copy the entire project
+# Copy source files (excluding what's in .dockerignore)
 COPY . .
 
-# build
-RUN yarn build
+# Build the application
+RUN npm run build
+
+# Stage 2: Production
+FROM node:24-alpine AS production
+
+WORKDIR /usr/app
+
+# Copy package files
+COPY package.json package-lock.json* ./
+
+# Install only production dependencies
+RUN npm ci --only=production
+
+# Copy built application from build stage
+COPY --from=build /usr/app/dist ./dist
 
 EXPOSE 3000
-CMD [ "yarn", "start" ]
+
+CMD [ "node", "./dist/app.js" ]
